@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-import math
+import math as Math
 
 root = Tk()
 root.minsize(500, 500)
@@ -27,7 +27,7 @@ class grade3():
         mathMarks = self.math    
         total = lanMarks + mathMarks
         total100 = total * 100
-        grade3final = total100 / 200
+        grade3final = Math.floor(total100 / 200)
         grade3percent['text'] = str(grade3final) + "%"
 
 class grade5():
@@ -51,7 +51,7 @@ class grade5():
         historyMarks = self.history
         total = lanMarks + mathMarks + historyMarks
         total100 = total * 100
-        grade5final = total100 / 300
+        grade5final = Math.floor(total100 / 300)
         grade5percent['text'] = str(grade5final) + "%"
 
 class grade10():
@@ -80,13 +80,13 @@ class grade10():
         flanguageMarks = self.flanguage
         total = lanMarks + mathMarks + historyMarks + flanguageMarks
         total100 = total * 100
-        grade10final = total100 / 400
+        grade10final = Math.floor(total100 / 400)
         grade10percent['text'] = str(grade10final) + "%"
 
-lan = 80
-math = 100
-history = 90
-flan = 70
+lan = 100
+math = 70
+history = 30
+flan = 50
 
 grade3 = grade3(lan, math)
 grade3button = Button(root, text="Grade 3 Percentage!", command=grade3.percentage)
