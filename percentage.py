@@ -89,17 +89,17 @@ history = 90
 flan = 70
 
 grade3 = grade3(lan, math)
-grade3button = Button(root, text="Grade 3 Percentage!", command=grade3.percentage())
+grade3button = Button(root, text="Grade 3 Percentage!", command=grade3.percentage)
 grade3button.place(relx=0.2, rely=0.8, anchor=CENTER)
 grade3percent.place(relx=0.2 , rely=0.6, anchor=CENTER)
 
 grade5 = grade5(lan, math, history)
-grade5button = Button(root, text="Grade 5 Percentage!", command = grade5.percentage())
+grade5button = Button(root, text="Grade 5 Percentage!", command = grade5.percentage)
 grade5button.place(relx=0.5, rely=0.8, anchor=CENTER)
 grade5percent.place(relx=0.5, rely=0.6, anchor=CENTER)
 
 grade10 = grade10(lan, math, history, flan)
-grade10button = Button(root, text="Grade 10 Percentage!", command = grade10.percentage())
+grade10button = Button(root, text="Grade 10 Percentage!", command = grade10.percentage)
 grade10button.place(relx=0.8, rely=0.8, anchor=CENTER)
 grade10percent.place(relx=0.8, rely=0.6, anchor=CENTER)
 root.mainloop()
